@@ -1,0 +1,26 @@
+CREATING A TABLE IN SQL:
+1. CREATE A TABLE ST_INFO WITH ATTRIBUTES PRN, NAME, M1, M2, M3
+Create table St_info (PRN int, Name varchar(20), M1 number, M2 number, M3 number);
+=> Table created
+Select * from tab;   # this will display no of tables present in the database
+Select * from St_info; # this will display content from the table
+
+2. INSERT AT LEAST 10 ROWS IN TABLE
+Insert into St_info values (101, 'Anushka', 20, 30, 40);
+insert into st_info values (102, 'Sharwari', 40, 40, 20);
+insert into st_info values (103, 'Kunali', 27, 36, 22);
+insert into st_info values (104, 'Omkar', 44, 32, 31);
+insert into st_info values (105, 'Parth', 45, 33, 23);
+insert into st_info values (106, 'Aaheli', 46, 34, 25);
+insert into st_info values (107, 'Aditi', 47, 35, 26);
+insert into st_info values (108, 'Esha', 38, 36, 27);
+insert into st_info values (109, 'Nandini', 39, 37, 28);
+insert into st_info values (110, 'Ritika', 39, 28, 18);
+
+3. ADD ATTRIBUTE TOTAL AND PERCENTAGE TO THE TABLE
+Alter table St_info add total number;
+Alter table St_info add percentage number;
+
+4. CALCULATE TOTAL & PERCENTAGE
+update st_info set total = M1+M2+M3;
+update st_info set percentage = total * 100 / 150;
